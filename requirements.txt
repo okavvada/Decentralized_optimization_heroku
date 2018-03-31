@@ -6,3 +6,4 @@ Shapely
 scipy
 Flask
 geopandas
+gunicorn
