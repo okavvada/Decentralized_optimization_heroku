@@ -8,4 +8,4 @@ Shapely==1.6.4.post1
 scipy==0.19.1
 Flask==0.12.2
 Fiona==1.7.4
-geopandas==0.3.0+48.ga577b12
+geopandas
