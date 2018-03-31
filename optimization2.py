@@ -228,23 +228,4 @@ def getServiceArea(queryPoint, path, metric, a, b, c, d, direct, electricity_GHG
 	elapsed2 = time.time() - t2
 	elapsed_out = time.time() - out_t3
 
-	# print("begin time %s "%begin_time, file=stderr)
-	# print("tree time %s "%elapsed_tree, file=stderr)
-	# print("init query %s "%elapsed_query, file=stderr)
-	# print("init dataf %s "%elapsed_dataframe, file=stderr)
-	# print("init time %s "%elapsed_init, file=stderr)
-	# print("Grpah time %s "%graph_time, file=stderr)
-	# print("MST time %s "%MST_time, file=stderr)
-	# print("calc time %s "%calc_time, file=stderr)
-	# print("out time %s "%elapsed_out, file=stderr)
-	# print("loop time %s "%elapsed2, file=stderr)
-
-	with open(path,'a') as f:
-	    writer=csv.writer(f)
-	    writer.writerow([])
-	    writer.writerow([queryPoint,sum_population,total_metric, pumping_tot, treatment_tot, treatment_embodied_tot, piping_tot])
-
-	iteration_results_df = pd.DataFrame(iteration_results)
-	iteration_results_df.to_csv('iteration_results.csv')
-
 	return point_properties
