@@ -424,7 +424,7 @@ document.getElementById("myList").onchange = function() {
 	      var name = type.name;
 	      var icon = type.icon;
 	      var div = document.createElement('div');
-	      div.innerHTML = '<img src="' + icon + '"> ' + name;
+	      div.innerHTML = '<img src="' + icon +  '" height="12" width="11">' + '   ' + name;
 	      legend.appendChild(div);
 
     }
