@@ -1,9 +1,6 @@
-geopy
 networkx
-geojson
+flask
 pandas
-Shapely
+geopy
 scipy
-Flask
-geopandas
 gunicorn
